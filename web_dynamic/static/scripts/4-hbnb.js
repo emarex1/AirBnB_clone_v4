@@ -15,6 +15,7 @@ $( document ).ready(function () {
 
   /*******************************************************
     display red circle on top right of page if status ok
+     sending an ajax get request
    *******************************************************/
   $.ajax({
     type: 'GET',
@@ -31,6 +32,7 @@ $( document ).ready(function () {
 
   /*******************************************************
     populate Places from frontend, instead of backend jinja
+    sending an ajax post request
    *******************************************************/
     $.ajax({
       type: 'POST',
@@ -47,6 +49,7 @@ $( document ).ready(function () {
   /*******************************************************
     populate Places from frontend, instead of backend jinja;
     filter places displayed based on amenity checkboxed list
+    whereby sending ajax post request to the server
    *******************************************************/
   $('button').click(function () {
     $('article').remove();
